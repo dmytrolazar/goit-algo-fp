@@ -102,7 +102,6 @@ def merge_two_sorted_linked_lists(left_list:LinkedList, right_list:LinkedList, d
         current_right = current_right.next
     return merged_list
 
-
 llist1 = LinkedList()
 llist1.insert_at_end(5)
 llist1.insert_at_end(555)
@@ -113,7 +112,6 @@ print("sorted llist1:")
 llist1.print_list()
 
 llist2 = LinkedList()
-
 llist2.insert_at_end(2)
 llist2.insert_at_end(222)
 llist2.insert_at_end(22)
