@@ -52,7 +52,7 @@ def draw_tree_dfs(tree_root):
 
     order = dfs_iterative(root)
 
-    colors = [('green', (order.index(node[0]) + 1)/len(order)) for node in tree.nodes(data=True)]
+    colors = [('green', 1-(order.index(node[0]))/len(order)) for node in tree.nodes(data=True)]
     labels = {node[0]: node[1]['label'] for node in tree.nodes(data=True)}
 
     plt.figure(figsize=(8, 5))
@@ -78,7 +78,7 @@ def draw_tree_bfs(tree_root):
 
     order = bfs_iterative(root)
 
-    colors = [('blue', (order.index(node[0]) + 1)/len(order)) for node in tree.nodes(data=True)]
+    colors = [('blue', 1-(order.index(node[0]))/len(order)) for node in tree.nodes(data=True)]
     labels = {node[0]: node[1]['label'] for node in tree.nodes(data=True)}
 
     plt.figure(figsize=(8, 5))
